@@ -13,7 +13,7 @@ def merge_sort(seq):
         else:
             res.append(rgt.pop())
     res.reverse()
-    return   res
+    return  (lft or rgt) + res
 
 nums = [78,4,2,6,3,5,9,7,8,13,11,42,26,78,58,49,99,37,44,66,61,88]
 print 'final:', merge_sort(nums)
